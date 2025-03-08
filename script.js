@@ -181,7 +181,7 @@ async function loadJobs() {
       `;
       jobListings.appendChild(jobElement);
     } catch (error) {
-      console.error(error);
+      
     }
   }
 }
