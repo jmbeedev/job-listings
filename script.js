@@ -1,8 +1,8 @@
-// Daftar file JSON yang akan dibaca
+// Daftar file JSON yang akan dibaca (tanpa folder)
 const jobFiles = [
-  'jobs/job1.json',
-  'jobs/job2.json',
-  'jobs/job3.json' // Tambahkan file baru di sini
+  'job1.json',
+  'job2.json',
+  'job3.json'
 ];
 
 // Fungsi untuk memuat dan menampilkan lowongan
