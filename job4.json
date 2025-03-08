@@ -23,6 +23,9 @@
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jakarta Selatan",
+      "addressLocality": "Kebayoran Baru", 
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "12120",
       "addressCountry": "ID"
     }
   },
