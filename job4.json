@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Telesales Representatives (Telemarketing Asuransi)",
+  "description": "<p>PT Prudential Life Assurance (Prudential Indonesia) is looking for dynamic and driven Telesales Representatives to join our Partnership Distribution team. As a Telesales Representative, you will be responsible for engaging with potential customers to provide them with information about our insurance products and services.</p>",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "PT Prudential Life Assurance",
+    "value": "82634007"
+  },
+  "datePosted": "2024-03-09",
+  "validThrough": "2024-05-09T00:00",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "PT Prudential Life Assurance",
+    "sameAs": "https://id.jobstreet.com/id/job/82634007?ref=search-standalone&type=standard&origin=jobTitle#sol=d0f47de07ab06f228677ab9e19630848cc94b45a",
+    "logo": "https://image-service-cdn.seek.com.au/2717532a7bc2232eba41f36e5747b3fbb95c99a3/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+    "website": "https://id.jobstreet.com/id/job/82634007?ref=search-standalone&type=standard&origin=jobTitle#sol=d0f47de07ab06f228677ab9e19630848cc94b45a"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jakarta Selatan",
+      "addressCountry": "ID"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "IDR",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 4000000.00,
+      "unitText": "MONTH"
+    }
+  }
+}
