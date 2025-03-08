@@ -5,6 +5,10 @@ $baseUrl = 'https://job-listings-dnq.pages.dev';
 // Daftar file JSON
 $jsonFiles = glob('*.json');
 
+if (empty($jsonFiles)) {
+    die('Tidak ada file JSON yang ditemukan.');
+}
+
 // Mulai membuat sitemap
 $sitemapContent = '<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
@@ -18,7 +22,7 @@ foreach ($jsonFiles as $file) {
     <url>
         <loc>' . $baseUrl . '/job/' . $jobId . '</loc>
         <lastmod>' . date('Y-m-d') . '</lastmod>
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>';
 }
@@ -28,7 +32,9 @@ $sitemapContent .= '
 </urlset>';
 
 // Simpan sitemap ke file
-file_put_contents('sitemap.xml', $sitemapContent);
-
-echo 'Sitemap generated successfully!';
+if (file_put_contents('sitemap.xml', $sitemapContent)) {
+    echo 'Sitemap generated successfully!';
+} else {
+    echo 'Gagal menyimpan sitemap.xml. Periksa izin file.';
+}
 ?>
