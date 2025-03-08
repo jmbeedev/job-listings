@@ -46,6 +46,7 @@ async function loadJobs() {
             </svg>
             <span>${data.baseSalary.value.value} ${data.baseSalary.currency} per ${data.baseSalary.value.unitText.toLowerCase()}</span>
           </div>
+          <a href="${data.hiringOrganization.website}" class="apply-button" target="_blank">Lamar Sekarang</a>
         </div>
       `;
 
