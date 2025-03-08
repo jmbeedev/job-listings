@@ -3,12 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lowongan Pekerjaan</title>
+  <title>Job Portal</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Daftar Lowongan Pekerjaan</h1>
-  <div id="job-listings" class="job-grid"></div> <!-- Container untuk grid lowongan -->
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Job Portal</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Daftar Lowongan Pekerjaan</h2>
+      <div id="job-listings" class="job-grid"></div> <!-- Container untuk grid lowongan -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>Tentang Kami</h2>
+      <p>
+        Job Portal adalah platform pencarian lowongan pekerjaan terpercaya yang membantu para pencari kerja menemukan pekerjaan impian mereka. Kami bekerja sama dengan berbagai perusahaan ternama untuk menyediakan informasi lowongan yang akurat dan terbaru.
+      </p>
+      <p>
+        Visi kami adalah menjadi penghubung terbaik antara pencari kerja dan perusahaan, sementara misi kami adalah menyediakan layanan yang mudah, cepat, dan transparan.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Hubungi Kami</h2>
+      <p>
+        Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui informasi di bawah ini:
+      </p>
+      <ul>
+        <li><strong>Email:</strong> support@jobportal.com</li>
+        <li><strong>Telepon:</strong> +62 123 4567 890</li>
+        <li><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta, Indonesia</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-and-conditions">Terms and Conditions</a>
+      </div>
+      <p>&copy; 2023 Job Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Disclaimer Modal -->
+  <div id="disclaimer" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Disclaimer</h2>
+      <p>
+        Informasi yang tersedia di Job Portal disediakan untuk tujuan umum saja. Kami berusaha menjaga informasi tetap akurat dan terbaru, namun kami tidak menjamin kelengkapan, keakuratan, atau keandalan informasi tersebut. Penggunaan informasi di website ini sepenuhnya menjadi tanggung jawab Anda.
+      </p>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacy-policy" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p>
+        Job Portal menghormati privasi pengguna. Kami mengumpulkan informasi pribadi hanya untuk keperluan penyediaan layanan dan tidak akan membagikannya kepada pihak ketiga tanpa izin Anda. Informasi yang kami kumpulkan meliputi nama, alamat email, dan data lainnya yang relevan.
+      </p>
+    </div>
+  </div>
+
+  <!-- Terms and Conditions Modal -->
+  <div id="terms-and-conditions" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Terms and Conditions</h2>
+      <p>
+        Dengan menggunakan Job Portal, Anda setuju untuk mematuhi syarat dan ketentuan berikut:
+      </p>
+      <ul>
+        <li>Anda bertanggung jawab atas informasi yang Anda berikan.</li>
+        <li>Anda tidak boleh menyalahgunakan layanan kami untuk tujuan ilegal.</li>
+        <li>Kami berhak mengubah syarat dan ketentuan tanpa pemberitahuan sebelumnya.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Script untuk Modal -->
+  <script>
+    // Buka modal
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'block';
+    }
+
+    // Tutup modal
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+    }
+
+    // Tambahkan event listener untuk link footer
+    document.querySelectorAll('.footer-links a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = link.getAttribute('href').substring(1);
+        openModal(modalId);
+      });
+    });
+
+    // Tambahkan event listener untuk tombol close
+    document.querySelectorAll('.modal .close').forEach(button => {
+      button.addEventListener('click', () => {
+        const modalId = button.closest('.modal').id;
+        closeModal(modalId);
+      });
+    });
+
+    // Tutup modal jika mengklik di luar konten modal
+    window.onclick = (e) => {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    };
+  </script>
 </body>
 </html>
