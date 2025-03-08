@@ -1,41 +1,41 @@
 {
   "@context": "https://schema.org/",
   "@type": "JobPosting",
-  "title": "IT Support",
-  "description": "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+  "title": "Staff Marketing - Live",
+  "description": "<p>JINISO is looking for a creative and results-driven Staff Marketing to join our team in Tangerang. The role involves planning, executing, and analyzing marketing strategies for live events and promotions to drive brand awareness and engagement.</p>",
   "identifier": {
     "@type": "PropertyValue",
-    "name": "Google",
-    "value": "1234567"
+    "name": "JINISO",
+    "value": "82632502"
   },
-  "datePosted": "2024-01-18",
-  "validThrough": "2024-03-18T00:00",
-  "employmentType": "CONTRACTOR",
+  "datePosted": "2024-03-09",
+  "validThrough": "2024-05-09T00:00",
+  "employmentType": "FULL_TIME",
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Google",
-    "sameAs": "https://www.google.com",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png",
-    "website": "https://www.google.com/careers"
+    "name": "JINISO",
+    "sameAs": "https://id.jobstreet.com/id/job/82632502?ref=search-standalone&type=standard&origin=jobTitle#sol=0730981d0b0548ef3717d9514d70960985703036",
+    "logo": "https://image-service-cdn.seek.com.au/754e4db22362970a5dea317c2e02aa8eb49124c8/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+    "website": "https://id.jobstreet.com/id/job/82632502?ref=search-standalone&type=standard&origin=jobTitle#sol=0730981d0b0548ef3717d9514d70960985703036"
   },
   "jobLocation": {
     "@type": "Place",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1600 Amphitheatre Pkwy",
-      "addressLocality": "Mountain View",
-      "addressRegion": "CA",
-      "postalCode": "94043",
-      "addressCountry": "US"
+      "streetAddress": "Tangerang",
+      "addressLocality": "Tangerang",
+      "addressRegion": "Banten",
+      "postalCode": "15118",
+      "addressCountry": "ID"
     }
   },
   "baseSalary": {
     "@type": "MonetaryAmount",
-    "currency": "USD",
+    "currency": "IDR",
     "value": {
       "@type": "QuantitativeValue",
-      "value": 40.00,
-      "unitText": "HOUR"
+      "value": 6000000.00,
+      "unitText": "MONTH"
     }
   }
 }
