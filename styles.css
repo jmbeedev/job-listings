@@ -21,62 +21,93 @@ body {
 
 /* Header */
 header {
-  background-color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Background gradien untuk tampilan lebih menarik */
   color: #fff;
-  padding: 10px 0;
+  padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih dalam */
+  transition: background-color 0.3s ease; /* Efek transisi saat background berubah */
 }
 
+/* Judul Header */
 header h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
   text-align: center;
+  letter-spacing: 1px; /* Menambahkan jarak antar huruf untuk tampilan lebih elegan */
+  font-weight: bold;
 }
 
+/* Navigasi utama */
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Menjaga agar nav tetap terpusat */
 }
 
-/* Membuat parent (ul) menjadi flexbox untuk mendistribusikan item secara horizontal */
+/* Flexbox untuk menu navigasi */
 header .nav-links {
-    display: flex;
-    justify-content: center;  /* Memusatkan item-menu di tengah */
-    align-items: center;  /* Memastikan item-menu juga rata secara vertikal */
-    list-style: none;  /* Menghilangkan bullet point default */
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Menata link menu */
+/* Menu item */
+header .nav-links li {
+  margin: 0 20px; /* Menambah jarak antar menu */
+}
+
+/* Styling untuk link menu */
 header .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 2px;
-    background-color: #333; /* background default */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 30px; /* Sudut yang lebih melengkung */
+  background-color: #333; /* Warna latar belakang default */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  position: relative; /* Untuk efek pseudo-element */
 }
 
-/* Efek saat hover */
+/* Efek hover */
 header .nav-links li a:hover {
-    background-color: #ff6347; /* Warna saat hover, seperti tomat */
-    color: #fff;
-    transform: scale(1.1); /* Memberikan efek sedikit membesar */
+  background-color: #ff6347; /* Warna saat hover */
+  color: #fff;
+  transform: translateY(-3px); /* Memberikan efek mengangkat saat hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Menambah bayangan untuk memberi kesan 3D */
 }
 
-/* Efek fokus untuk aksesibilitas */
+/* Efek saat fokus (aksesibilitas) */
 header .nav-links li a:focus {
-    outline: 2px solid #ff6347; /* Menambahkan outline saat link fokus */
-    background-color: #333;
+  outline: none; /* Menghilangkan outline default */
+  background-color: #333;
+  box-shadow: 0 0 0 3px #ff6347; /* Memberikan border yang jelas saat fokus */
 }
+
+/* Responsif untuk tampilan lebih kecil */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .nav-links {
+    flex-direction: column;
+  }
+
+  header .nav-links li {
+    margin: 10px 0;
+  }
+}
+
 
 /* Hamburger Menu (Mobile) */
 .menu-toggle {
