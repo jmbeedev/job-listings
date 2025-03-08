@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Govt Relation Manager",
+  "description": "<p>PT Ecooils Jaya Indonesia is looking for an experienced and proactive Govt Relation Manager to help build and maintain strong relationships with government stakeholders, ensuring smooth operations and compliance with regulations.</p>",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "PT Ecooils Jaya Indonesia",
+    "value": "82633584"
+  },
+  "datePosted": "2024-03-09",
+  "validThrough": "2024-05-09T00:00",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "PT Ecooils Jaya Indonesia",
+    "sameAs": "https://id.jobstreet.com/id/job/82633584?ref=search-standalone&type=standard&origin=jobTitle#sol=3139bbf8f27ca881963bd845f2bda86966cf5cba",
+    "logo": "https://image-service-cdn.seek.com.au/eebaeb008543386fceac68f230cd6c8853edccde/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+    "website": "https://id.jobstreet.com/id/job/82633584?ref=search-standalone&type=standard&origin=jobTitle#sol=3139bbf8f27ca881963bd845f2bda86966cf5cba"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gresik",
+      "addressLocality": "Gresik",
+      "addressRegion": "Jawa Timur",
+      "postalCode": "61123",
+      "addressCountry": "ID"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "IDR",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 7000000.00,
+      "unitText": "MONTH"
+    }
+  }
+}
