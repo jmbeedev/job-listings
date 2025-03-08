@@ -196,16 +196,24 @@ document.addEventListener('DOMContentLoaded', function () {
       // Parse JSON-LD
       const jsonLd = JSON.parse(schemaScript.textContent);
 
-      // Tambahkan atau perbarui datePosted dan validThrough
-      const datePosted = new Date().toISOString();
-      const validThrough = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(); // 30 hari dari sekarang
+      // Buat entri baru dengan datePosted dan validThrough terbaru
+      const newEntry = {
+        datePosted: new Date().toISOString(), // Tanggal hari ini
+        validThrough: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString() // 30 hari dari sekarang
+      };
 
-      jsonLd.datePosted = datePosted;
-      jsonLd.validThrough = validThrough;
+      // Jika schema adalah array, tambahkan entri baru ke array
+      if (Array.isArray(jsonLd)) {
+        jsonLd.push(newEntry);
+      } else {
+        // Jika schema adalah objek, ubah menjadi array dan tambahkan entri baru
+        jsonLd = [jsonLd, newEntry];
+      }
 
       // Perbarui konten script dengan schema yang telah diubah
       schemaScript.textContent = JSON.stringify(jsonLd, null, 2);
 
+      console.log('Entri baru ditambahkan ke schema JSON-LD:', newEntry);
       console.log('Schema JSON-LD diperbarui:', jsonLd);
     } catch (error) {
       console.error('Gagal memproses schema JSON-LD:', error);
