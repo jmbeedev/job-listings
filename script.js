@@ -187,3 +187,25 @@ async function loadJobs() {
 }
 
 window.onload = loadJobs;
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Cari schema JSON-LD di halaman
+  const schemaScript = document.querySelector('script[type="application/ld+json"]');
+  if (schemaScript) {
+    try {
+      const jsonLd = JSON.parse(schemaScript.textContent);
+
+      // Tambahkan atau perbarui datePosted dan validThrough
+      const datePosted = new Date().toISOString();
+      const validThrough = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(); // 30 hari dari sekarang
+
+      jsonLd.datePosted = datePosted;
+      jsonLd.validThrough = validThrough;
+
+      // Perbarui konten script dengan schema yang telah diubah
+      schemaScript.textContent = JSON.stringify(jsonLd, null, 2);
+    } catch (error) {
+      console.error('Gagal memproses schema JSON-LD:', error);
+    }
+  }
+});
