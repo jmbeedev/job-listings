@@ -21,32 +21,33 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #007bff, #0056b3); /* Background gradien untuk tampilan lebih menarik */
+  background: #007bff; /* Warna biru solid yang menarik */
   color: #fff;
-  padding: 15px 0;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih dalam */
-  transition: background-color 0.3s ease; /* Efek transisi saat background berubah */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan lembut dengan efek lebih dalam */
+  transition: background-color 0.3s ease-in-out; /* Efek transisi saat warna berubah */
 }
 
-/* Judul Header */
+/* Judul header */
 header h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin: 0;
   text-align: center;
-  letter-spacing: 1px; /* Menambahkan jarak antar huruf untuk tampilan lebih elegan */
-  font-weight: bold;
+  letter-spacing: 2px; /* Jarak antar huruf untuk efek modern */
+  font-weight: 600;
+  text-transform: uppercase; /* Memberikan efek teks besar */
 }
 
 /* Navigasi utama */
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto; /* Menjaga agar nav tetap terpusat */
+  margin: 0 auto; /* Memastikan nav tetap terpusat */
 }
 
 /* Flexbox untuk menu navigasi */
@@ -61,7 +62,8 @@ header .nav-links {
 
 /* Menu item */
 header .nav-links li {
-  margin: 0 20px; /* Menambah jarak antar menu */
+  margin: 0 20px; /* Memberikan jarak antar menu */
+  position: relative; /* Untuk efek pseudo-element */
 }
 
 /* Styling untuk link menu */
@@ -70,26 +72,44 @@ header .nav-links li a {
   text-decoration: none;
   font-size: 1.1rem;
   padding: 12px 25px;
-  border-radius: 30px; /* Sudut yang lebih melengkung */
+  border-radius: 30px;
   background-color: #333; /* Warna latar belakang default */
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   display: inline-block;
-  position: relative; /* Untuk efek pseudo-element */
+  position: relative;
+  text-transform: capitalize; /* Menjaga teks terlihat lebih formal */
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Menambahkan bayangan ringan */
 }
 
 /* Efek hover */
 header .nav-links li a:hover {
   background-color: #ff6347; /* Warna saat hover */
   color: #fff;
-  transform: translateY(-3px); /* Memberikan efek mengangkat saat hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Menambah bayangan untuk memberi kesan 3D */
+  transform: translateY(-4px); /* Efek sedikit terangkat */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
 }
 
 /* Efek saat fokus (aksesibilitas) */
 header .nav-links li a:focus {
   outline: none; /* Menghilangkan outline default */
-  background-color: #333;
-  box-shadow: 0 0 0 3px #ff6347; /* Memberikan border yang jelas saat fokus */
+  box-shadow: 0 0 0 3px #ff6347; /* Border saat fokus dengan warna merah */
+}
+
+/* Menambahkan efek underline saat hover */
+header .nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+header .nav-links li a:hover::after {
+  width: 100%; /* Membuat garis bawah penuh saat hover */
 }
 
 /* Responsif untuk tampilan lebih kecil */
