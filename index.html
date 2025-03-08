@@ -13,7 +13,10 @@
     <div class="container">
       <h1>Job Portal</h1>
       <nav>
-        <ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -27,7 +30,7 @@
     <!-- Home Section -->
     <section id="home">
       <h2>Daftar Lowongan Pekerjaan</h2>
-      <div id="job-listings" class="job-grid"></div> <!-- Container untuk grid lowongan -->
+      <div id="job-listings" class="job-grid"></div>
     </section>
 
     <!-- About Section -->
@@ -104,42 +107,5 @@
       </ul>
     </div>
   </div>
-
-  <!-- Script untuk Modal -->
-  <script>
-    // Buka modal
-    function openModal(modalId) {
-      document.getElementById(modalId).style.display = 'block';
-    }
-
-    // Tutup modal
-    function closeModal(modalId) {
-      document.getElementById(modalId).style.display = 'none';
-    }
-
-    // Tambahkan event listener untuk link footer
-    document.querySelectorAll('.footer-links a').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const modalId = link.getAttribute('href').substring(1);
-        openModal(modalId);
-      });
-    });
-
-    // Tambahkan event listener untuk tombol close
-    document.querySelectorAll('.modal .close').forEach(button => {
-      button.addEventListener('click', () => {
-        const modalId = button.closest('.modal').id;
-        closeModal(modalId);
-      });
-    });
-
-    // Tutup modal jika mengklik di luar konten modal
-    window.onclick = (e) => {
-      if (e.target.classList.contains('modal')) {
-        e.target.style.display = 'none';
-      }
-    };
-  </script>
 </body>
 </html>
