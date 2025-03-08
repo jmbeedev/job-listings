@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const schemaScript = document.querySelector('script[type="application/ld+json"]');
   if (schemaScript) {
     try {
+      // Parse JSON-LD
       const jsonLd = JSON.parse(schemaScript.textContent);
 
       // Tambahkan atau perbarui datePosted dan validThrough
@@ -204,8 +205,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Perbarui konten script dengan schema yang telah diubah
       schemaScript.textContent = JSON.stringify(jsonLd, null, 2);
+
+      console.log('Schema JSON-LD diperbarui:', jsonLd);
     } catch (error) {
       console.error('Gagal memproses schema JSON-LD:', error);
     }
+  } else {
+    console.error('Schema JSON-LD tidak ditemukan di halaman.');
   }
 });
