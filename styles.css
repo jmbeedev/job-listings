@@ -21,7 +21,7 @@ body {
 
 /* Header */
 header {
-  background: #007bff; /* Warna biru solid yang menarik */
+  background: #333; /* Warna biru solid yang menarik */
   color: #fff;
   padding: 20px 0;
   position: sticky;
