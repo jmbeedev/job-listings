@@ -8,11 +8,54 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 20px;
   background-color: #f4f4f4;
+  color: #333;
 }
 
-h1 {
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+header nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+}
+
+main h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
@@ -23,7 +66,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 kolom per baris */
   gap: 20px;
-  padding: 20px;
 }
 
 /* Job Card */
@@ -45,16 +87,16 @@ h1 {
 /* Feature Image */
 .job-card img {
   width: 100%;
-  height: 150px; /* Tinggi gambar disesuaikan */
-  object-fit: contain; /* Logo menyesuaikan ukuran */
+  height: 150px;
+  object-fit: contain;
   padding: 10px;
-  background-color: #f9f9f9; /* Warna latar belakang logo */
+  background-color: #f9f9f9;
 }
 
 /* Job Details */
 .job-details {
   padding: 20px;
-  flex-grow: 1; /* Agar konten mengisi sisa ruang */
+  flex-grow: 1;
 }
 
 .job-details h2 {
@@ -103,17 +145,32 @@ h1 {
   background-color: #0056b3;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .job-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom per baris di tablet */
-  }
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .job-grid {
-    grid-template-columns: 1fr; /* 1 kolom per baris di mobile */
-  }
+footer .footer-links {
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: opacity 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  opacity: 0.8;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
 /* Modal */
@@ -141,15 +198,18 @@ h1 {
 
 .modal-content h2 {
   margin-bottom: 20px;
+  color: #333;
 }
 
 .modal-content p {
   margin-bottom: 15px;
+  color: #666;
 }
 
 .modal-content ul {
   margin-bottom: 15px;
   padding-left: 20px;
+  color: #666;
 }
 
 .modal-content .close {
@@ -163,4 +223,22 @@ h1 {
 
 .modal-content .close:hover {
   color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .job-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom per baris di tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .job-grid {
+    grid-template-columns: 1fr; /* 1 kolom per baris di mobile */
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
