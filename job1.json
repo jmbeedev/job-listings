@@ -15,7 +15,8 @@
     "@type": "Organization",
     "name": "Google",
     "sameAs": "https://www.google.com",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png"
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png",
+    "website": "https://www.google.com/careers" <!-- Link lamaran -->
   },
   "jobLocation": {
     "@type": "Place",
