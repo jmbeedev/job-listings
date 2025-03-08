@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Chef De Partie",
+  "description": "<p>Le Quartier Restaurant, part of PT Oceanika Bahana, is looking for a skilled Chef De Partie to join our team. The ideal candidate will be responsible for preparing and cooking dishes in their designated section of the kitchen, ensuring that high standards of food quality and presentation are maintained.</p>",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Le Quartier Restaurant",
+    "value": "82631770"
+  },
+  "datePosted": "2025-03-09",
+  "validThrough": "2025-07-20T00:00",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Le Quartier Restaurant (PT Oceanika Bahana)",
+    "sameAs": "https://www.oceanikabahana.com",
+    "logo": "https://image-service-cdn.seek.com.au/4ef7d27236092c1590ae0d4f3fd0926a438023d5/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+    "website": "https://id.jobstreet.com/id/job/82631770?ref=search-standalone&type=standard&origin=jobTitle#sol=d6a3e30284eb4cf653797fb195e4a4375a44a086"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jakarta Selatan",
+      "addressLocality": "Jakarta",
+      "addressRegion": "Jakarta",
+      "postalCode": "12130",
+      "addressCountry": "ID"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "IDR",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 9000000,
+      "unitText": "MONTH"
+    }
+  }
+}
