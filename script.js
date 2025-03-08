@@ -1,32 +1,65 @@
-// Daftar file JSON yang akan dibaca
+// Hamburger Menu
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
+
+// Modal
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+document.querySelectorAll('.footer-links a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const modalId = link.getAttribute('href').substring(1);
+    openModal(modalId);
+  });
+});
+
+document.querySelectorAll('.modal .close').forEach(button => {
+  button.addEventListener('click', () => {
+    const modalId = button.closest('.modal').id;
+    closeModal(modalId);
+  });
+});
+
+window.onclick = (e) => {
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+  }
+};
+
+// Load Jobs
 const jobFiles = [
   'job1.json',
   'job2.json',
   'job3.json'
 ];
 
-// Fungsi untuk memuat dan menampilkan lowongan
 async function loadJobs() {
   const jobListings = document.getElementById('job-listings');
 
   for (const file of jobFiles) {
     try {
-      // Ambil data dari file JSON
       const response = await fetch(file);
       if (!response.ok) {
         throw new Error(`Gagal memuat file ${file}: ${response.statusText}`);
       }
       const data = await response.json();
 
-      // Buat elemen script untuk JSON-LD
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.textContent = JSON.stringify(data);
-
-      // Tambahkan elemen script ke dalam body
       document.body.appendChild(script);
 
-      // Buat elemen HTML untuk menampilkan informasi lowongan
       const jobElement = document.createElement('div');
       jobElement.classList.add('job-card');
       jobElement.innerHTML = `
@@ -49,8 +82,6 @@ async function loadJobs() {
           <a href="${data.hiringOrganization.website}" class="apply-button" target="_blank">Lamar Sekarang</a>
         </div>
       `;
-
-      // Tambahkan elemen lowongan ke dalam daftar
       jobListings.appendChild(jobElement);
     } catch (error) {
       console.error(error);
@@ -58,5 +89,4 @@ async function loadJobs() {
   }
 }
 
-// Jalankan fungsi loadJobs saat halaman selesai dimuat
 window.onload = loadJobs;
