@@ -1,41 +1,41 @@
 {
   "@context": "https://schema.org/",
   "@type": "JobPosting",
-  "title": "Software Engineer",
-  "description": "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+  "title": "Staff Teknik Sipil",
+  "description": "<p>PT Iga Abadi Indonesia is seeking a qualified and motivated Staff Teknik Sipil to join our team in Surabaya. The ideal candidate will be responsible for supporting civil engineering projects and ensuring their timely and efficient execution.</p>",
   "identifier": {
     "@type": "PropertyValue",
-    "name": "Google",
-    "value": "1234567"
+    "name": "PT Iga Abadi Indonesia",
+    "value": "82633525"
   },
-  "datePosted": "2024-01-18",
-  "validThrough": "2024-03-18T00:00",
-  "employmentType": "CONTRACTOR",
+  "datePosted": "2024-03-09",
+  "validThrough": "2024-05-09T00:00",
+  "employmentType": "FULL_TIME",
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Google",
-    "sameAs": "https://www.google.com",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png",
-    "website": "https://www.google.com/careers"
+    "name": "PT Iga Abadi Indonesia",
+    "sameAs": "https://id.jobstreet.com/id/job/82633525?ref=search-standalone&type=standard&origin=jobTitle#sol=152f810bb36f983b562bd8795316803c39aa3f2c",
+    "logo": "https://image-service-cdn.seek.com.au/9d91147cd1d888b70a7c6aaff13ef1660bc588e7/a868bcb8fbb284f4e8301904535744d488ea93c1",
+    "website": "https://id.jobstreet.com/id/job/82633525?ref=search-standalone&type=standard&origin=jobTitle#sol=152f810bb36f983b562bd8795316803c39aa3f2c"
   },
   "jobLocation": {
     "@type": "Place",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1600 Amphitheatre Pkwy",
-      "addressLocality": "Mountain View",
-      "addressRegion": "CA",
-      "postalCode": "94043",
-      "addressCountry": "US"
+      "streetAddress": "Surabaya",
+      "addressLocality": "Surabaya",
+      "addressRegion": "Jawa Timur",
+      "postalCode": "60111",
+      "addressCountry": "ID"
     }
   },
   "baseSalary": {
     "@type": "MonetaryAmount",
-    "currency": "USD",
+    "currency": "IDR",
     "value": {
       "@type": "QuantitativeValue",
-      "value": 40.00,
-      "unitText": "HOUR"
+      "value": 5000000.00,
+      "unitText": "MONTH"
     }
   }
 }
