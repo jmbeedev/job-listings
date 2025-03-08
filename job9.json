@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Mekanik Wheel Large M1 & M2",
+  "description": "<p>Roda Jaya Sakti Grup is looking for a skilled Mekanik Wheel Large M1 & M2 to join their team in Morowali, Sulawesi Tengah. The role involves maintaining and repairing large wheel machinery, ensuring they are operating efficiently and safely for various industrial purposes.</p>",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Roda Jaya Sakti Grup",
+    "value": "82630797"
+  },
+  "datePosted": "2025-03-09",
+  "validThrough": "2025-09-20T00:00",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Roda Jaya Sakti Grup",
+    "sameAs": "https://www.rodajayasakti.com",
+    "logo": "https://image-service-cdn.seek.com.au/673fd2eccb9fd7705b4062896c64c6ad2b284f93/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+    "website": "https://id.jobstreet.com/id/job/82630797?ref=search-standalone&type=standard&origin=jobTitle#sol=9efd0d2bce9612cdd022a0b903a4a027ee441720"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Morowali, Sulawesi Tengah",
+      "addressLocality": "Morowali",
+      "addressRegion": "Sulawesi Tengah",
+      "postalCode": "94511",
+      "addressCountry": "ID"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "IDR",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 6500000,
+      "unitText": "MONTH"
+    }
+  }
+}
