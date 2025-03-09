@@ -30,4 +30,41 @@
     <changefreq>dayly</changefreq>
     <priority>0.8</priority>
   </url>
+   <url>
+    <loc>https://job-listings-dnq.pages.dev/job6</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>dayly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <url>
+    <loc>https://job-listings-dnq.pages.dev/job7</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>dayly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <url>
+    <loc>https://job-listings-dnq.pages.dev/job8</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>dayly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <url>
+    <loc>https://job-listings-dnq.pages.dev/job9</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>dayly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <url>
+    <loc>https://job-listings-dnq.pages.dev/job10</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>dayly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <url>
+    <loc>https://job-listings-dnq.pages.dev/job5</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>dayly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
